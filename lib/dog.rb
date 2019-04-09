@@ -67,7 +67,7 @@ def self.find_by_id(id)
      dog
    end
 
-   
+
 
 
 
