@@ -90,7 +90,7 @@ def self.find_by_id(id)
 
     def update
        sql = "UPDATE dogs SET name = ?, breed = ? WHERE name = ?"
-       DB[:conn].execute(sql, self.name, self.breed, self.name)
+       DB[:conn].execute(sql, id: id, self.name, self.breed, self.name)
      end
 
 
