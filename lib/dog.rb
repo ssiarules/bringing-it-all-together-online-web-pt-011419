@@ -67,7 +67,7 @@ def self.find_by_id(id)
      dog
    end
 
-   def self.new_from_db(name:name, breed:breed)
+   def self.new_from_db(row)
     dog = self.new(name:name, breed:breed)  # self.new is the same as running Song.new
     dog.id = row[0]
     dog.name =  row[1]
