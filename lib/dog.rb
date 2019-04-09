@@ -72,7 +72,7 @@ def self.find_by_id(id)
     name =  row[1]
     breed = row[2]
     self.new(id: id, name: name, breed: breed)  # self.new is the same as running Song.new
-    dog  # return the newly created instance
+    # return the newly created instance
    end
 
 
